@@ -6,12 +6,13 @@ import { Link, Route, Routes } from "react-router-dom";
 
 import "./styles/index.scss";
 import { useTheme } from "./theme/useTheme";
+import { classNames } from "./helpers/classNames/classNames";
 
 export const App = () => {
 	const { toggleTheme, theme } = useTheme();
-
+	const bool = true;
 	return (
-		<div className={`app ${theme}`}>
+		<div className={classNames("app", {}, [theme])}>
 			<button onClick={toggleTheme}>toggle</button>
 			<Link to="/">Main</Link>
 			<Link to="/about">About</Link>
