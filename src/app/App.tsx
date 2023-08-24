@@ -7,12 +7,10 @@ import { classNames } from "@/shared/lib/classNames/classNames";
 import "./styles/index.scss";
 
 export const App = () => {
-	const { toggleTheme, theme } = useTheme();
+	const { theme } = useTheme();
 	return (
 		<div className={classNames("app", {}, [theme])}>
 			<Navbar />
-			<button onClick={toggleTheme}>toggle</button>
-
 			<AppRouter />
 		</div>
 	);
