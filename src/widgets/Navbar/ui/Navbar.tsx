@@ -1,6 +1,6 @@
-import { ThemeSwitcher } from "widgets/ThemeSwitcher";
-
 import { classNames } from "shared/lib/classNames/classNames";
+
+import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
 import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
 
 import cls from "./Navbar.module.scss";
