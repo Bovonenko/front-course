@@ -6,8 +6,8 @@ import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
 import CaretLeft from "shared/assets/icons/caret-left.svg";
 import CaretRight from "shared/assets/icons/caret-right.svg";
 
-import cls from "./Sidebar.module.scss";
 import { LanguageSwitcher } from "shared/ui/LanguageSwitcher";
+import cls from "./Sidebar.module.scss";
 
 interface SidebarProps {
 	className?: string;

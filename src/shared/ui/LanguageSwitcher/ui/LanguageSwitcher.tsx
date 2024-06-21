@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { classNames } from "shared/lib/classNames/classNames";
 import LanguageIcon from "shared/assets/icons/language.svg";
 
-import cls from "./LanguageSwitcher.module.scss";
 import { MyButtonWC } from "shared/WC/Button/my-button";
+import cls from "./LanguageSwitcher.module.scss";
 
 interface LanguageSwitcherProps {
 	className?: string;
