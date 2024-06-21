@@ -9,6 +9,10 @@ export default css`
 		display: block;
 	}
 
+	button {
+		color: var(--inverted-secondary-color);
+	}
+
 	button:hover {
 		cursor: pointer;
 	}

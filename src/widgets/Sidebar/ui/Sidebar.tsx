@@ -7,6 +7,7 @@ import CaretLeft from "shared/assets/icons/caret-left.svg";
 import CaretRight from "shared/assets/icons/caret-right.svg";
 
 import cls from "./Sidebar.module.scss";
+import { LanguageSwitcher } from "shared/ui/LanguageSwitcher";
 
 interface SidebarProps {
 	className?: string;
@@ -32,7 +33,10 @@ export const Sidebar = ({ className }: SidebarProps) => {
 				)}
 			</button>
 
-			<ThemeSwitcher />
+			<div className={cls.switchers}>
+				<ThemeSwitcher />
+				<LanguageSwitcher />
+			</div>
 		</div>
 	);
 };
