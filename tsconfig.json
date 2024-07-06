@@ -6,6 +6,7 @@
 		"target": "ESNext",
 		"jsx": "react-jsx",
 		"allowJs": true,
+		"strict": true,
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
 		"experimentalDecorators": true,
@@ -20,5 +21,6 @@
 		"compilerOptions": {
 			"module": "CommonJS"
 		}
-	}
+	},
+	"exclude": ["node_modules"]
 }

@@ -1,9 +1,9 @@
-type Mods = Record<string, boolean | string>;
+type Mods = Partial<Record<string, boolean | string>>;
 
 export function classNames(
 	cls: string,
-	mods?: Mods,
-	additional?: string[]
+	mods: Mods = {},
+	additional: (string | undefined)[] = [],
 ): string {
 	return [
 		cls,
@@ -13,6 +13,3 @@ export function classNames(
 			.map(([className]) => className),
 	].join(" ");
 }
-classNames("remove-btn", { hovered: true, selectable: true, red: false }, [
-	"pdg",
-]);
