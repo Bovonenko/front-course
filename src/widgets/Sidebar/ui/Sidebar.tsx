@@ -7,6 +7,7 @@ import CaretLeft from "shared/assets/icons/caret-left.svg";
 import CaretRight from "shared/assets/icons/caret-right.svg";
 
 import { LanguageSwitcher } from "shared/ui/LanguageSwitcher";
+import { MyButtonWC, ThemeButton } from "shared/WC/Button/my-button";
 import cls from "./Sidebar.module.scss";
 
 interface SidebarProps {
@@ -25,13 +26,17 @@ export const Sidebar = ({ className }: SidebarProps) => {
 				className,
 			])}
 		>
-			<button className={cls.sidebarButton} onClick={onToggle}>
+			<MyButtonWC
+				theme={ThemeButton.CLEAR}
+				className={cls.sidebarButton}
+				onClick={onToggle}
+			>
 				{collapsed ? (
 					<CaretRight className={cls.sidebarIcon} />
 				) : (
 					<CaretLeft className={cls.sidebarIcon} />
 				)}
-			</button>
+			</MyButtonWC>
 
 			<div className={cls.switchers}>
 				<ThemeSwitcher />

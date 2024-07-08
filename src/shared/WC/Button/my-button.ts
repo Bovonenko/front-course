@@ -13,7 +13,7 @@ export enum ThemeButton {
 class MyButton extends LitElement {
 	static styles = [styles];
 
-	@property({ reflect: true }) theme: ThemeButton = ThemeButton.CLEAR;
+	@property({ reflect: true }) theme?: ThemeButton;
 
 	render() {
 		return html`

@@ -1,3 +1,8 @@
 {
-  "Page is not found": "Page is not found"
+  "Page is not found": "Page is not found",
+  "Sorry": {
+    "": {}
+  },
+  "Error": "Sorry.. there was an error",
+  "Reload page": "Reload page"
 }
